@@ -11,6 +11,7 @@ public:
     void showGrafo(QTextEdit *_textEdit );
     void resizeAdj(int V);
     int getAdjacencia(){return adjacencias.size();};
+    bool isExist(int _value, QVector<int> _vertice);
 private:
     int NumeroVertices;
     QVector<QVector<int>> adjacencias;

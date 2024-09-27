@@ -27,6 +27,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    Grafo *G = new Grafo(10) ;
+    Grafo *G = new Grafo(0) ;
 };
 #endif // MAINWINDOW_H

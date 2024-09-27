@@ -6,8 +6,13 @@ Grafo::Grafo(int V): NumeroVertices(V), adjacencias(V) {
 
 }
 void Grafo::adicionarAresta(int v1, int v2){
-    adjacencias[v1].push_back(v2);
-    adjacencias[v2].push_back(v1);
+
+    if(!isExist(v2,adjacencias[v1] )){
+        adjacencias[v1].push_back(v2);
+    }
+    if(!isExist(v1, adjacencias[v2])){
+        adjacencias[v2].push_back(v1);
+    }
 }
 
 void Grafo::showGrafo( QTextEdit *_textEdit ){
@@ -34,4 +39,13 @@ void Grafo::showGrafo( QTextEdit *_textEdit ){
 
 void Grafo::resizeAdj(int V){
     adjacencias.resize(V);
+}
+
+bool Grafo::isExist(int _value, QVector<int> _vertice){
+    for(int i : _vertice){
+        if(_value == i){
+            return true;
+        }
+    }
+    return false;
 }
