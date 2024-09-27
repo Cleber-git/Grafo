@@ -3,10 +3,12 @@
 #include <QVector>
 #include <QTextEdit>
 
+// Grafo simples
 class Grafo
 {
 public:
     Grafo(int V);
+
     void adicionarAresta(int v1, int v2);
     void showGrafo(QTextEdit *_textEdit );
     void resizeAdj(int V);
