@@ -31,7 +31,7 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    int mult = G->getAdjacencia();
+    int mult = G->getSizeAdjacencia();
     mult++;
     G->resizeAdj(mult);
 

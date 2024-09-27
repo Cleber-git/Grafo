@@ -14,6 +14,7 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    abstract_grafo.h \
     grafo.h \
     mainwindow.h
 
