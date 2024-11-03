@@ -1,8 +1,8 @@
 #ifndef FABRICADEGRAFOS_H
 #define FABRICADEGRAFOS_H
-#include "grafo.h"
-#include "grafondirecionado.h"
-#include "grafomultigrafo.h"
+#include "Grafos/grafo.h"
+#include "Grafos/grafondirecionado.h"
+#include "Grafos/grafomultigrafo.h"
 
 class fabricaDeGrafos
 {

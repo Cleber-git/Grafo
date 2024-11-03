@@ -1,6 +1,6 @@
 #ifndef GRAFO_H
 #define GRAFO_H
-#include "abstract_grafo.h"
+#include "Grafos/Abstract/abstract_grafo.h"
 
 #include <QVector>
 #include <QTextEdit>

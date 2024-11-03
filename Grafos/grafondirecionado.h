@@ -1,6 +1,6 @@
 #ifndef GRAFONDIRECIONADO_H
 #define GRAFONDIRECIONADO_H
-#include "abstract_grafo.h"
+#include "Grafos/Abstract/abstract_grafo.h"
 #include <QVector>
 #include <QDebug>
 

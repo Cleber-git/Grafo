@@ -9,23 +9,23 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    fabricadegrafos.cpp \
-    grafo.cpp \
-    grafomultigrafo.cpp \
-    grafondirecionado.cpp \
+    Grafos/Fábrica/fabricadegrafos.cpp \
+    Grafos/grafo.cpp \
+    Grafos/grafomultigrafo.cpp \
+    Grafos/grafondirecionado.cpp \
     main.cpp \
-    mainwindow.cpp
+    ui/mainwindow.cpp
 
 HEADERS += \
-    abstract_grafo.h \
-    fabricadegrafos.h \
-    grafo.h \
-    grafomultigrafo.h \
-    grafondirecionado.h \
-    mainwindow.h
+    Grafos/Abstract/abstract_grafo.h \
+    Grafos/Fábrica/fabricadegrafos.h \
+    Grafos/grafo.h \
+    Grafos/grafomultigrafo.h \
+    Grafos/grafondirecionado.h \
+    ui/mainwindow.h
 
 FORMS += \
-    mainwindow.ui
+    ui/mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

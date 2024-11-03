@@ -1,7 +1,7 @@
 #ifndef GRAFOMULTIGRAFO_H
 #define GRAFOMULTIGRAFO_H
 
-#include "abstract_grafo.h"
+#include "Grafos/Abstract/abstract_grafo.h"
 
 #include <QDebug>
 #include <QTextEdit>

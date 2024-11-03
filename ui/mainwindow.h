@@ -2,10 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "grafo.h"
+#include "Grafos/grafo.h"
 
 #include <QString>
-#include "fabricadegrafos.h"
+#include "Grafos/Fábrica/fabricadegrafos.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -29,6 +29,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     fabricaDeGrafos* f;
-    AbstractGrafo *G = f->createGrafo(fabricaDeGrafos::MULTIGRAFO) ;
+    AbstractGrafo *G = f->createGrafo(fabricaDeGrafos::SIMPLES) ;
 };
 #endif // MAINWINDOW_H
