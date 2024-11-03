@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     fabricadegrafos.cpp \
     grafo.cpp \
+    grafomultigrafo.cpp \
     grafondirecionado.cpp \
     main.cpp \
     mainwindow.cpp
@@ -19,6 +20,7 @@ HEADERS += \
     abstract_grafo.h \
     fabricadegrafos.h \
     grafo.h \
+    grafomultigrafo.h \
     grafondirecionado.h \
     mainwindow.h
 

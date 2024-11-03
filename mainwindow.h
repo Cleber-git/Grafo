@@ -5,6 +5,7 @@
 #include "grafo.h"
 
 #include <QString>
+#include "fabricadegrafos.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -21,13 +22,13 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
 
     void on_pushButton_2_clicked();
 
 
 private:
     Ui::MainWindow *ui;
-    Grafo *G = new Grafo(0) ;
+    fabricaDeGrafos* f;
+    AbstractGrafo *G = f->createGrafo(fabricaDeGrafos::MULTIGRAFO) ;
 };
 #endif // MAINWINDOW_H

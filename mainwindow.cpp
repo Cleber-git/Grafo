@@ -21,10 +21,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_clicked()
-{
-    G->showGrafo(ui->textEdit);
-}
 
 void MainWindow::on_pushButton_2_clicked()
 {
@@ -33,7 +29,7 @@ void MainWindow::on_pushButton_2_clicked()
     G->resizeAdj(mult);
 
     G->adicionarAresta((rand() %mult), (rand() %mult));
-     G->showGrafo(ui->textEdit);
+     G->mostrarGrafo(ui->textEdit);
 }
 
 

@@ -14,19 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>300</y>
-      <width>83</width>
-      <height>29</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Show</string>
-    </property>
-   </widget>
    <widget class="QTextEdit" name="textEdit">
     <property name="enabled">
      <bool>false</bool>
@@ -40,20 +27,26 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: blue ;</string>
+     <string notr="true">color: grey ;
+background: rgb(26, 27, 28) ;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>20</y>
+      <x>110</x>
+      <y>290</y>
       <width>31</width>
       <height>29</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font-weight: bold ;
+background: rgb(26, 27, 28) ;
+color: white ;</string>
+    </property>
     <property name="text">
-     <string>Add</string>
+     <string>+</string>
     </property>
    </widget>
    <widget class="QScrollBar" name="verticalScrollBar">
@@ -64,6 +57,10 @@
       <width>16</width>
       <height>201</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(26, 27, 28);
+</string>
     </property>
     <property name="orientation">
      <enum>Qt::Vertical</enum>

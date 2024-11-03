@@ -2,13 +2,15 @@
 #define FABRICADEGRAFOS_H
 #include "grafo.h"
 #include "grafondirecionado.h"
+#include "grafomultigrafo.h"
 
 class fabricaDeGrafos
 {
 public:
     enum Grafos{
         SIMPLES,
-        NAO_DIRECIONADO
+        NAO_DIRECIONADO,
+        MULTIGRAFO
     };
     AbstractGrafo* createGrafo(Grafos _typeGrafo);
     fabricaDeGrafos();
