@@ -9,12 +9,17 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    fabricadegrafos.cpp \
     grafo.cpp \
+    grafondirecionado.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    abstract_grafo.h \
+    fabricadegrafos.h \
     grafo.h \
+    grafondirecionado.h \
     mainwindow.h
 
 FORMS += \

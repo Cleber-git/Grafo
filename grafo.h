@@ -1,19 +1,24 @@
 #ifndef GRAFO_H
 #define GRAFO_H
+#include "abstract_grafo.h"
+
 #include <QVector>
 #include <QTextEdit>
 
 // Grafo simples
-class Grafo
+// Classe que herda a classe abstrata de grafo para a criação de grafo simples não direcionado
+
+class Grafo : public AbstractGrafo
 {
 public:
     Grafo(int V);
+    void mostrarGrafo()override;
+    void adicionarAresta(int _v1, int _v2)override;
+    void showGrafo(QTextEdit *_textEdit);
+    void resizeAdj(int _v)override;
+    int getSizeAdjacencia()override{return adjacencias.size();}
+    bool ifExist(int _value, QVector<int> _vertice)override;
 
-    void adicionarAresta(int v1, int v2);
-    void showGrafo(QTextEdit *_textEdit );
-    void resizeAdj(int V);
-    int getAdjacencia(){return adjacencias.size();};
-    bool isExist(int _value, QVector<int> _vertice);
 private:
     int NumeroVertices;
     QVector<QVector<int>> adjacencias;

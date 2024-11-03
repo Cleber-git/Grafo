@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>250</width>
-    <height>323</height>
+    <height>361</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>270</y>
+      <y>300</y>
       <width>83</width>
       <height>29</height>
      </rect>
@@ -28,13 +28,19 @@
     </property>
    </widget>
    <widget class="QTextEdit" name="textEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>40</x>
       <y>70</y>
       <width>171</width>
-      <height>171</height>
+      <height>201</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: blue ;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -48,6 +54,19 @@
     </property>
     <property name="text">
      <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="verticalScrollBar">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>70</y>
+      <width>16</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
     </property>
    </widget>
   </widget>

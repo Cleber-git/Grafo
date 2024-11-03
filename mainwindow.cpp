@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QScrollBar>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -8,15 +9,11 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // G->adicionarAresta(0, 1);
-    // G->adicionarAresta(1, 2);
-    // G->adicionarAresta(2, 3);
-    // G->adicionarAresta(3, 4);
-    // G->adicionarAresta(4, 5);
-    // G->adicionarAresta(5, 6);
-    // G->adicionarAresta(6, 7);
-    // G->adicionarAresta(7, 8);
-    // G->adicionarAresta(8, 9);
+    connect(ui->verticalScrollBar, &QScrollBar::valueChanged, ui->textEdit->verticalScrollBar(), &QScrollBar::setValue);
+    connect(ui->textEdit->verticalScrollBar(), &QScrollBar::valueChanged, ui->verticalScrollBar, &QScrollBar::setValue);
+
+    connect(ui->textEdit->verticalScrollBar(), &QScrollBar::rangeChanged, [=](int min, int max){
+        ui->verticalScrollBar->setRange( min,  max); });
 }
 
 MainWindow::~MainWindow()
@@ -31,10 +28,13 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    int mult = G->getAdjacencia();
+    int mult = G->getSizeAdjacencia();
     mult++;
     G->resizeAdj(mult);
 
     G->adicionarAresta((rand() %mult), (rand() %mult));
+     G->showGrafo(ui->textEdit);
 }
+
+
 
